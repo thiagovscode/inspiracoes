@@ -17,10 +17,10 @@ export const pageConfig = {
       image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      id: "madmoselles",
-      title: "Madmoselles",
-      description: "Guia de cores, vestidos e estilo para as madmoselles",
-      url: "https://br.pinterest.com/search/pins/?q=mademoiselle%20dress%20wedding",
+      id: "demoiselles",
+      title: "Demoiselles",
+      description: "Guia de cores, vestidos e estilo para as demoiselles",
+      url: "https://br.pinterest.com/batistatainara293/inspira%C3%A7%C3%A3o-cor-mademoiselle/?invite_code=f3cd7943cb20487aa3014dcf76742bbf&sender=654711001987632234",
       image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
@@ -29,6 +29,13 @@ export const pageConfig = {
       description: "Guia de cores, trajes e estilo para os pais",
       url: "https://br.pinterest.com/batistatainara293/inspira%C3%A7%C3%A3o-pais/?invite_code=ae9e90d87640401f97f068bc9966f2a3&sender=654711001987632234",
       image: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    },
+    {
+      id: "daminhas-pajens",
+      title: "Daminhas e Pajens",
+      description: "Guia de cores, trajes e estilo para as daminhas e pajens",
+      url: "https://br.pinterest.com/batistatainara293/inspira%C3%A7%C3%A3o-daminha/?invite_code=dc3a79a051fb4e7babb931c7f518e2e5&sender=654711001987632234",
+      image: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     }
   ]
 };
