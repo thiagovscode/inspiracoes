@@ -17,10 +17,10 @@ export const pageConfig = {
       image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
-      id: "daminhas-pajens",
-      title: "Daminhas e Pajens",
-      description: "Inspirações fofas para os pequenos",
-      url: "https://br.pinterest.com/search/pins/?q=flower%20girl%20ring%20bearer",
+      id: "madmoselles",
+      title: "Madmoselles",
+      description: "Cor, vestido e estilo",
+      url: "https://br.pinterest.com/search/pins/?q=mademoiselle%20dress%20wedding",
       image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
