@@ -4,7 +4,10 @@ export const pageConfig = {
   eventDetails: {
     title: "Onde e Quando",
     location: "Espaço Balboa em Mairiporã",
+    address: "Av. Parque Petrópolis, 250 - Serra da Cantareira",
     time: "15h",
+    mapLink: "https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Balboa+Mairipor%C3%A3",
+    wazeLink: "https://waze.com/ul?q=Espa%C3%A7o%20Balboa%20Mairipor%C3%A3&navigate=yes",
     image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
   },
   links: [
@@ -13,7 +16,7 @@ export const pageConfig = {
       title: "Padrinhos",
       description: "Guia de cores, trajes e estilo para os padrinhos",
       url: "https://br.pinterest.com/batistatainara293/inspira%C3%A7%C3%A3o-terno-cinza-claro/?invite_code=da4e648829d84ace8b2cdec2b56a40ac&sender=654711001987632234",
-      image: "https://images.unsplash.com/photo-1510926510493-edfb8f0019fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     },
     {
       id: "madrinhas",

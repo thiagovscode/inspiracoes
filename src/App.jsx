@@ -36,15 +36,29 @@ function App() {
                   <h2 className="text-2xl md:text-4xl font-medium text-white mb-2">
                     {pageConfig.eventDetails.title}
                   </h2>
-                  <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-stone-200 font-light text-sm md:text-lg mt-2">
-                    <p className="flex items-center gap-2">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                      {pageConfig.eventDetails.location}
-                    </p>
+                  <div className="flex flex-col md:flex-row gap-4 md:gap-6 text-stone-200 font-light text-sm md:text-lg mt-2 items-start md:items-center">
+                    <div>
+                      <p className="flex items-center gap-2">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        {pageConfig.eventDetails.location}
+                      </p>
+                      <p className="text-xs md:text-sm text-stone-300 ml-7 mt-1 opacity-80">
+                        {pageConfig.eventDetails.address}
+                      </p>
+                    </div>
                     <p className="flex items-center gap-2">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                       {pageConfig.eventDetails.time}
                     </p>
+                  </div>
+                  
+                  <div className="flex gap-3 mt-5">
+                    <a href={pageConfig.eventDetails.mapLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-xs text-white transition-colors backdrop-blur-sm">
+                      Google Maps
+                    </a>
+                    <a href={pageConfig.eventDetails.wazeLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-xs text-white transition-colors backdrop-blur-sm">
+                      Waze
+                    </a>
                   </div>
                 </div>
               </div>
