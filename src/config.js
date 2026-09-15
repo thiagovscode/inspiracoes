@@ -8,7 +8,7 @@ export const pageConfig = {
     time: "14h",
     mapLink: "https://www.google.com/maps/search/?api=1&query=Espa%C3%A7o+Balboa+Mairipor%C3%A3",
     wazeLink: "https://waze.com/ul?q=Espa%C3%A7o%20Balboa%20Mairipor%C3%A3&navigate=yes",
-    image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    image: "./balboa.jpg"
   },
   links: [
     {

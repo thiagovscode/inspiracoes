@@ -17,7 +17,7 @@ function App() {
 
         <main className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
           {pageConfig.eventDetails && (
-            <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-stone-100 aspect-[2/1] md:aspect-[3/1] flex flex-col justify-end shadow-sm hover:shadow-xl transition-all duration-500">
+            <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-stone-100 min-h-[320px] md:min-h-0 md:aspect-[3/1] flex flex-col justify-end shadow-sm hover:shadow-xl transition-all duration-500">
               <div className="absolute inset-0 w-full h-full">
                 <img 
                   src={pageConfig.eventDetails.image} 
@@ -25,7 +25,7 @@ function App() {
                   className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 opacity-100 md:opacity-80 md:group-hover:opacity-90 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 opacity-100 md:opacity-90 md:group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
               <div className="relative p-6 md:p-8 z-10 w-full flex flex-col justify-end h-full">
@@ -80,7 +80,7 @@ function App() {
                   className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 opacity-100 md:opacity-80 md:group-hover:opacity-90 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/40 opacity-100 md:opacity-90 md:group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
               <div className="relative p-6 md:p-8 z-10 w-full flex flex-col justify-end h-full">
