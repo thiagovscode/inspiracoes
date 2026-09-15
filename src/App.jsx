@@ -16,6 +16,41 @@ function App() {
         </header>
 
         <main className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          {pageConfig.eventDetails && (
+            <div className="md:col-span-2 group relative overflow-hidden rounded-2xl bg-stone-100 aspect-[2/1] md:aspect-[3/1] flex flex-col justify-end shadow-sm hover:shadow-xl transition-all duration-500">
+              <div className="absolute inset-0 w-full h-full">
+                <img 
+                  src={pageConfig.eventDetails.image} 
+                  alt={pageConfig.eventDetails.title}
+                  className="w-full h-full object-cover transition-transform duration-700 md:group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 opacity-100 md:opacity-80 md:group-hover:opacity-90 transition-opacity duration-500"></div>
+              </div>
+              
+              <div className="relative p-6 md:p-8 z-10 w-full flex flex-col justify-end h-full">
+                <div className="transform transition-transform duration-500 mt-auto">
+                  <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-[10px] md:text-xs text-white/90 uppercase tracking-wider mb-2 md:mb-3">
+                    Cerimônia & Festa
+                  </span>
+                  <h2 className="text-2xl md:text-4xl font-medium text-white mb-2">
+                    {pageConfig.eventDetails.title}
+                  </h2>
+                  <div className="flex flex-col md:flex-row gap-2 md:gap-6 text-stone-200 font-light text-sm md:text-lg mt-2">
+                    <p className="flex items-center gap-2">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                      {pageConfig.eventDetails.location}
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      {pageConfig.eventDetails.time}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {pageConfig.links.map((link) => (
             <a 
               key={link.id} 

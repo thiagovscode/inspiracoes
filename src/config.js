@@ -1,6 +1,12 @@
 export const pageConfig = {
   title: "Inspirações para o Casamento",
   subtitle: "Guia de estilo e inspirações para nossos convidados de honra",
+  eventDetails: {
+    title: "Onde e Quando",
+    location: "Espaço Balboa em Mairiporã",
+    time: "15h",
+    image: "https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+  },
   links: [
     {
       id: "padrinhos",
